@@ -10,6 +10,7 @@ import RelatedBooks from "../../components/RelatedBooks/RelatedBooks";
 import HandleLottie from "../../components/HandleLottie/HandleLottie";
 
 function BookDetails() {
+  const API_URL = import.meta.env.VITE_API_URL;
   const navigate = useNavigate();
   const { addToCartFromDetails, cartIDS } = useContext(cartContext);
   const [isDisabledBtn, setIsDisabledBtn] = useState(false);
@@ -40,7 +41,7 @@ function BookDetails() {
       setLoading(true);
       setIsError(false);
       const { data } = await axios.get(
-        `http://localhost:3000/products?id=${id}`,
+        `${API_URL}/products?id=${id}`,
       );
       if (data && data.length > 0) {
         setSingleProductData(data[0]);

@@ -37,6 +37,7 @@ import axios from "axios";
 import { RiErrorWarningLine } from "react-icons/ri";
 
 function CourseDetails() {
+   const API_URL = import.meta.env.VITE_API_URL;
   const { id } = useParams();
   const [isMoreLearn, setIsMoreLearn] = useState(true);
   const [isMoreLearnReview, setIsMoreLearnReview] = useState(true);
@@ -110,7 +111,7 @@ function CourseDetails() {
       setIsLoaderCourseDetails(true);
       setIsErrorCourseDetails(false);
       const { data } = await axios.get(
-        `http://localhost:3000/products?category=courses&id=${bookId}`,
+        `${API_URL}/products?category=courses&id=${bookId}`,
       );
       if (data && data.length > 0) {
         setCoursesDetailsSingle(data[0]);
