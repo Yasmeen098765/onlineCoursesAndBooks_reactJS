@@ -13,6 +13,7 @@ export const CartContextProvider = ({ children }) => {
   const [cartLoader, setCartLoader] = useState(false); //state loader
   const [cartItemsAmount, setCartItemsAmount] = useState(0);
   const { currentUser } = useContext(AuthContext);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("cartIDS")) || {};
@@ -60,7 +61,7 @@ export const CartContextProvider = ({ children }) => {
       const concatenatedIDS = allCartIds.map((id) => `id=${id}`).join("&");
       if (allCartIds.length > 0) {
         let { data } = await axios.get(
-          `http://localhost:3000/products?${concatenatedIDS}`,
+          `${API_URL}/products?${concatenatedIDS}`,
         );
         setRecords(data);
       }

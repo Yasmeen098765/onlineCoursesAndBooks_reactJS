@@ -5,10 +5,12 @@ export const DisplayCoursesContext = createContext();
 
 export const DisplayCoursesContextProvider = ({ children }) => {
   const [coursesData, setCoursesData] = useState([]);
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const displayCourses = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/products?category=courses",
+        `${API_URL}/products?category=courses`,
       );
       setCoursesData(data);
     } catch (error) {

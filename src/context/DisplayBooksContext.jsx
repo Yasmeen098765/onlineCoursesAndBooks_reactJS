@@ -7,11 +7,12 @@ export const DisplayContextBooksProvider = ({ children }) => {
   const [booksData, setBooksData] = useState([]); //state success
   const [booksErr, setBooksErr] = useState(null); //state error
   const [booksLoader, setBooksLoader] = useState(false); //state loader
+  const API_URL = import.meta.env.VITE_API_URL;
   const displayBooksData = async () => {
     try {
       setBooksLoader(true);
       let { data } = await axios.get(
-        "http://localhost:3000/products?category=books",
+        `${API_URL}/products?category=books`,
       );
       setBooksData(data);
     } catch (error) {
