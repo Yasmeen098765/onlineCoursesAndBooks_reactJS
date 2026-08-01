@@ -11,9 +11,7 @@ export const DisplayContextBooksProvider = ({ children }) => {
   const displayBooksData = async () => {
     try {
       setBooksLoader(true);
-      let { data } = await axios.get(
-        `${API_URL}/products?category=books`,
-      );
+      let { data } = await axios.get(`${API_URL}/products?category=books`);
       setBooksData(data);
     } catch (error) {
       const messageError = (

@@ -40,9 +40,7 @@ function BookDetails() {
     try {
       setLoading(true);
       setIsError(false);
-      const { data } = await axios.get(
-        `${API_URL}/products?id=${id}`,
-      );
+      const { data } = await axios.get(`${API_URL}/products?id=${id}`);
       if (data && data.length > 0) {
         setSingleProductData(data[0]);
       } else {

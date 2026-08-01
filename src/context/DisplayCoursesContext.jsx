@@ -9,9 +9,7 @@ export const DisplayCoursesContextProvider = ({ children }) => {
 
   const displayCourses = async () => {
     try {
-      const { data } = await axios.get(
-        `${API_URL}/products?category=courses`,
-      );
+      const { data } = await axios.get(`${API_URL}/products?category=courses`);
       setCoursesData(data);
     } catch (error) {
       console.log(error);
