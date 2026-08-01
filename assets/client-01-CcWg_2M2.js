@@ -1,0 +1,1 @@
+var e=`/onlineCoursesAndBooks_reactJS/assets/client-01-HhVXuCKg.png`;export{e as t};
