@@ -1,1 +1,0 @@
-var e=`/assets/client-01-HhVXuCKg.png`;export{e as t};
