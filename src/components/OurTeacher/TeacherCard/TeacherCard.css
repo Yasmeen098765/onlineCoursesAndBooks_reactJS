@@ -1,0 +1,4 @@
+.teacherCard.active {
+  opacity: 1 !important;
+  visibility: 1 !important;
+}

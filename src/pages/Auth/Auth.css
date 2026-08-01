@@ -1,0 +1,20 @@
+.Auth .auth-heading {
+    background: url("../../assets//OnlineCourses/bg-g1.webp") center no-repeat;
+    background-size: cover;
+}
+
+.css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root {
+    padding-right: 5px !important;
+}
+
+.css-er619e-MuiFormHelperText-root {
+    font-size: 0.6rem !important;
+    margin-top: 2px !important;
+    margin-left: 0px !important;
+}
+
+@media (min-width:600px) {
+    .css-er619e-MuiFormHelperText-root {
+        font-size: 0.75rem !important;
+    }
+}

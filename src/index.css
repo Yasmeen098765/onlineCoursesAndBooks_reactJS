@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* 👇 هذا السطر يحل المشكلة */
+@custom-variant hover (&:hover);
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.btn5 {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(64, 88, 238);
+    box-shadow: 0 5px 10px rgba(175, 101, 231, 0.614);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn5>div>div:nth-of-type(1) {
+    opacity: 0;
+}
+
+.btn5:not(:disabled):hover>div>div:nth-of-type(1) {
+    opacity: 100;
+}
+
+.btn5>div>div:nth-of-type(2) {
+    opacity: 100;
+}
+
+.btn5:not(:disabled):hover>div>div:nth-of-type(2) {
+    opacity: 0;
+}
+
+
+.btn5::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    right: 30%;
+    transform: translateX(10%);
+    background: linear-gradient(to right, transparent, rgb(175, 101, 231), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn5:not(:disabled):hover::after {
+    transform: translateX(70%) !important;
+}
+
+
+.errorZoom {
+    animation: zoom 2s forwards ease-in-out;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+.veideoAnimate::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background: transparent;
+    transform: scale(1);
+    animation: riple 2s linear 0s infinite forwards;
+    z-index: -1;
+}
+
+.veideoAnimate::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background: transparent;
+    transform: scale(1);
+    animation: riple 2s linear 1s infinite forwards;
+    z-index: -1;
+}
+
+@keyframes riple {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scale(1.8);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+}
+
+
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background: #2f57ef;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.icon:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* ________________________________toaster_______________________________________ */
+
+.go2072408551 {
+    font-size: 11px !important;
+    color: white !important;
+    background-image: linear-gradient(to right, rgb(178, 127, 244), rgb(76, 99, 243)) !important;
+}
+
+@media (min-width:270px) {
+    .go2072408551 {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width:300px) {
+    .go2072408551 {
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width:350px) {
+    .go2072408551 {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width:400px) {
+    .go2072408551 {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width:500px) {
+    .go2072408551 {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width:600px) {
+    .go2072408551 {
+        font-size: 17px !important;
+    }
+}
+
+@media (min-width:700px) {
+    .go2072408551 {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width:900px) {
+    .go2072408551 {
+        font-size: 20px !important;
+    }
+}

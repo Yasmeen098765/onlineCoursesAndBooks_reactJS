@@ -1,0 +1,8 @@
+.bookDetails .bookdetails-heading{
+     background: url("../../assets//OnlineCourses/bg-g1.webp") center no-repeat;
+    background-size: cover;
+}
+
+.counterBtn:not(:disabled):active{
+  transform: scale(0.7);
+}

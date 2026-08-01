@@ -1,0 +1,30 @@
+.pagination-container {
+    background: transparent;
+    width: max-content !important;
+    top: 15px !important;
+    bottom: unset !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    gap: 5px !important;
+    padding: 10px !important;
+    border-radius: 30px !important;
+    border: 1px solid white !important
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    background: yellow !important;
+    opacity: 1 !important;
+    border: 1px solid transparent !important;
+}
+
+.swiper-pagination-bullet-active {
+    /* border-radius: 50% !important; */
+    /* transform: skew(30deg) !important; */
+    border-color: black !important;
+
+}

@@ -1,0 +1,73 @@
+.navBar p {
+    transition: 0.3s;
+}
+
+.navBar p.active {
+    background: #ddd;
+    color: var(--color-primary)
+}
+
+.navBar .cat-info {
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.navBar .cat-info.active {
+    transform: scale(1);
+}
+
+.navBar .course span {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.navBar .course:hover span {
+    opacity: 1;
+    display: flex;
+}
+
+.xf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.viewProfile::after {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 255, 0.824);
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transition: 0.3s
+}
+
+@media (min-width:351px) {
+    .viewProfile::after {
+        height: 2px;
+    }
+}
+
+.viewProfile:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.scrollAnimate {
+    animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+
+@keyframes stickySlideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

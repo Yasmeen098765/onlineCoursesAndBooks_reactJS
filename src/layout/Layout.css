@@ -1,0 +1,15 @@
+/* لتغيير لون التقدم */
+.my-back-to-top svg circle[stroke]:last-of-type {
+    stroke: rgb(64, 88, 238) !important;
+}
+
+/* لتغيير لون خلفية التقدم */
+.my-back-to-top svg circle[stroke]:first-of-type {
+    stroke: rgb(223, 220, 220) !important;
+}
+
+/* تغيير الخلفية السوداء إلى اللون الذي تريده */
+.my-back-to-top svg circle[fill] {
+    fill: rgba(255, 255, 255, 0.18) !important;
+    /* أو أي لون تريده للخلفية */
+}

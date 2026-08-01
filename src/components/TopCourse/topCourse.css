@@ -1,0 +1,66 @@
+.topCourse .btn {
+    padding: 10px 70px !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(64, 88, 238);
+    box-shadow: 0 5px 10px rgba(175, 101, 231, 0.614);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@media (min-width:350px) {
+    .topCourse .btn {
+        padding: 12px 95px !important;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:451px) {
+    .topCourse .btn {
+        padding: 13px 100px !important;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width:600px) {
+    .topCourse .btn {
+        padding: 15px 130px !important;
+        border-radius: 8px;
+    }
+}
+
+.topCourse .btn>div>div:nth-of-type(1) {
+    opacity: 0;
+}
+
+.topCourse .btn:hover>div>div:nth-of-type(1) {
+    opacity: 100;
+}
+
+.topCourse .btn>div>div:nth-of-type(2) {
+    opacity: 100;
+}
+
+.topCourse .btn:hover>div>div:nth-of-type(2) {
+    opacity: 0;
+}
+
+.topCourse .btn::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    right: 30%;
+    transform: translateX(10%);
+    background: linear-gradient(to right, transparent, rgb(175, 101, 231), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.topCourse .btn:hover::after {
+    transform: translateX(70%);
+}

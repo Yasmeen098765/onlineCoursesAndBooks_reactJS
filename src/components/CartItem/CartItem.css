@@ -1,0 +1,104 @@
+.cartItem {}
+
+/* ____________________________________________________________________________ */
+/* alert design  */
+/* ===== تنسيق أزرار التحذير ===== */
+.book-card-swal-popup1 .swal-confirm-btn {
+    background: linear-gradient(to right, #f59e0b, #f89320) !important;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+    border: none !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+    border-radius: 5px !important;
+}
+
+.book-card-swal-popup .swal-confirm-btn {
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+    border-radius: 5px !important;
+}
+
+.book-card-swal-popup1 .swal-confirm-btn:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 25px rgba(245, 158, 11, 0.6) !important;
+}
+
+.book-card-swal-popup1 .swal-cancel-btn {
+    background: rgb(69, 123, 255) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(69, 123, 255, 0.4) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+    border-radius: 5px !important;
+}
+
+.book-card-swal-popup1 .swal-cancel-btn:hover {
+    background: rgba(69, 122, 255, 0.822) !important;
+    transform: scale(1.05) !important;
+}
+
+
+@media (min-width:500px) {
+
+    .book-card-swal-popup1 .swal-confirm-btn,
+    .book-card-swal-popup .swal-confirm-btn,
+    .book-card-swal-popup1 .swal-cancel-btn {
+        padding: 8px 10px !important;
+        font-size: 13px !important;
+        border-radius: 8px !important;
+    }
+}
+
+@media (min-width:600px) {
+
+    .book-card-swal-popup1 .swal-confirm-btn,
+    .book-card-swal-popup .swal-confirm-btn,
+    .book-card-swal-popup1 .swal-cancel-btn {
+        padding: 9px 12px !important;
+        font-size: 14px !important;
+        border-radius: 8px !important;
+    }
+}
+
+
+@media (min-width:900px) {
+
+    .book-card-swal-popup1 .swal-confirm-btn,
+    .book-card-swal-popup .swal-confirm-btn,
+    .book-card-swal-popup1 .swal-cancel-btn {
+        padding: 9px 19px !important;
+        font-size: 16px !important;
+        border-radius: 9px !important;
+    }
+}
+
+/* ===== للنجاح (Success) ===== */
+.book-card-swal-popup-success .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #22c55e, #16a34a) !important;
+    height: 4px !important;
+}
+
+/* ===== للتحذير (Warning) ===== */
+.book-card-swal-popup-warning .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #f59e0b, #d97706) !important;
+    height: 4px !important;
+}
+
+/* ===== للخطأ (Error) ===== */
+.book-card-swal-popup-error .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #ef4444, #dc2626) !important;
+    height: 4px !important;
+}
+
+/* ===== للمعلومات (Info) ===== */
+.book-card-swal-popup-info .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #3b82f6, #2563eb) !important;
+    height: 4px !important;
+}

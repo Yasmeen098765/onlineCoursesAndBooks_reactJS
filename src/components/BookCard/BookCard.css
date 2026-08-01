@@ -1,0 +1,209 @@
+.bookCard1 .price {
+    background-clip: text;
+}
+
+.bookCard1 .btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(64, 88, 238);
+    box-shadow: 0 5px 10px rgba(175, 101, 231, 0.614);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bookCard1.btn>div>div:nth-of-type(1) {
+    opacity: 0;
+}
+
+.bookCard1 .btn:hover>div>div:nth-of-type(1) {
+    opacity: 100;
+}
+
+.bookCard1 .btn>div>div:nth-of-type(2) {
+    opacity: 100;
+}
+
+.bookCard1 .btn:hover>div>div:nth-of-type(2) {
+    opacity: 0;
+}
+
+.bookCard1 .btn::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    right: 30%;
+    transform: translateX(10%);
+    background: linear-gradient(to right, transparent, rgb(175, 101, 231), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bookCard1 .btn:hover::after {
+    transform: translateX(70%);
+}
+
+
+/* ____________________________________________________________________________ */
+/* alert design  */
+.book-card-swal-html {
+    padding: 0 !important;
+}
+
+div:where(.swal2-container) div:where(.swal2-html-container) svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.book-card-swal-popup {
+    box-shadow: 0 0 25px 5px rgba(53, 54, 59, 0.523) !important;
+    border-radius: 8px !important;
+    width: 85% !important;
+    padding: 30px 10px !important;
+    color: rgb(81, 78, 78) !important;
+    /* background-image: linear-gradient(to right, rgb(178, 127, 244), rgb(76, 99, 243)) !important; */
+}
+
+@media (min-width:250px) {
+    .book-card-swal-html svg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .book-card-swal-popup {
+        border-radius: 8px !important;
+        width: 85% !important;
+    }
+}
+
+@media (min-width:270px) {
+    .book-card-swal-html svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+}
+
+@media (min-width:330px) {
+
+    .book-card-swal-popup {
+        width: 250px !important;
+    }
+}
+
+@media (min-width:400px) {
+
+    .book-card-swal-popup {
+        width: 250px !important;
+    }
+}
+
+@media (min-width:500px) {
+    .book-card-swal-html svg {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .book-card-swal-popup {
+        border-radius: 8px !important;
+        width: 50% !important;
+    }
+}
+
+@media (min-width:500px) {
+    .book-card-swal-popup {
+        border-radius: 8px !important;
+        width: 50% !important;
+    }
+}
+
+@media (min-width:750px) {
+    .book-card-swal-html svg {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .book-card-swal-popup {
+        border-radius: 10px !important;
+        width: 45% !important;
+    }
+}
+
+@media (min-width:800px) {
+
+    .book-card-swal-popup {
+        width: 350px !important;
+    }
+}
+
+@media (min-width:900px) {
+    .book-card-swal-html svg {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .book-card-swal-popup {
+        width: 380px !important;
+    }
+}
+
+/* _______________________________________________________________________ */
+/* 
+.go2072408551 {
+    font-size: 11px !important;
+    color: white !important;
+    background-image: linear-gradient(to right, rgb(178, 127, 244), rgb(76, 99, 243)) !important;
+}
+
+@media (min-width:270px) {
+    .go2072408551 {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width:300px) {
+    .go2072408551 {
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width:350px) {
+    .go2072408551 {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width:400px) {
+    .go2072408551 {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width:500px) {
+    .go2072408551 {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width:600px) {
+    .go2072408551 {
+        font-size: 17px !important;
+    }
+}
+
+@media (min-width:700px) {
+    .go2072408551 {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width:900px) {
+    .go2072408551 {
+        font-size: 20px !important;
+    }
+} */

@@ -1,0 +1,102 @@
+.courseDetails {}
+
+.courseDetails .courseDetails-heading {
+    background: url('../../assets/OnlineCourses/bg-g1.webp') top no-repeat;
+    background-size: 100% 90vh;
+}
+
+@media (min-width:260px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 80vh;
+    }
+}
+
+@media (min-width:300px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 85vh;
+    }
+}
+
+@media (min-width:350px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 99vh;
+    }
+}
+
+@media (min-width:400px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 105vh;
+    }
+}
+
+@media (min-width:434px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 100vh;
+    }
+}
+
+@media (min-width:455px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 95vh;
+    }
+}
+
+@media (min-width:471px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 95vh;
+    }
+}
+
+@media (min-width:480px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 90vh;
+    }
+}
+
+@media (min-width:490px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 90vh;
+    }
+}
+
+@media (min-width:700px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 95vh;
+    }
+}
+
+@media (min-width:800px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 113vh;
+    }
+}
+
+@media (min-width:806px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 106vh;
+    }
+}
+
+@media (min-width:820px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 95vh;
+    }
+}
+
+@media (min-width:1000px) {
+    .courseDetails .courseDetails-heading {
+        background-size: 100% 103vh;
+    }
+}
+
+.courseDetails .activeCourseDetails.active {
+    background: rgb(21, 93, 252) !important;
+    color: white !important;
+}
+
+
+.ms-progress-wrapper_A043BXZ .ms-progress-container_XH4B78M {
+    padding: 1.5px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+}

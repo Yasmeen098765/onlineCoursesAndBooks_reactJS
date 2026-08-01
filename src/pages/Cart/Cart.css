@@ -1,0 +1,18 @@
+.cart .cart-heading {
+    background: url("../../assets//OnlineCourses/bg-g1.webp") center no-repeat;
+    background-size: cover;
+}
+
+.css-1rju2q6-MuiButtonBase-root-MuiMenuItem-root {
+    min-height: auto !important;
+}
+
+.css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    font-size: 10px !important;
+}
+
+@media (min-width:450px) {
+    .css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+        font-size: 14px !important;
+    }
+}

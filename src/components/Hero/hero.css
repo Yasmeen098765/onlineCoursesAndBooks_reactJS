@@ -1,0 +1,148 @@
+.hero {
+    background: url(../../assets/OnlineCourses/bg-g1.webp) center;
+    background-size: cover;
+}
+
+.hero::after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 41px;
+    bottom: -1px;
+    left: 0;
+    background: url(../../assets/OnlineCourses/banner-bg-shape-1.svg) no-repeat center;
+    background-size: cover;
+    z-index: 9;
+}
+
+@media (min-width:230px) {
+    .hero::after {
+        height: 32px;
+    }
+}
+
+@media (min-width:400px) {
+    .hero::after {
+        height: 72px;
+    }
+}
+
+@media (min-width:800px) {
+    .hero::after {
+        height: 96px;
+    }
+}
+
+@media (min-width:1200px) {
+    .hero::after {
+        height: 145px;
+    }
+}
+
+.hero .polygonhero {
+    -webkit-clip-path: polygon(100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+    clip-path: polygon(100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+    box-shadow: 0 0 50px 4px gray !important;
+}
+
+.hero .btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(64, 88, 238);
+    box-shadow: 0 5px 10px rgba(175, 101, 231, 0.614);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.hero .btn>div>div:nth-of-type(1) {
+    opacity: 0;
+}
+
+.hero .btn:hover>div>div:nth-of-type(1) {
+    opacity: 100;
+}
+
+.hero .btn>div>div:nth-of-type(2) {
+    opacity: 100;
+}
+
+.hero .btn:hover>div>div:nth-of-type(2) {
+    opacity: 0;
+}
+
+.hero .btn::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    right: 30%;
+    transform: translateX(10%);
+    background: linear-gradient(to right, transparent, rgb(175, 101, 231), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.hero .btn:hover::after {
+    transform: translateX(70%);
+}
+
+.hero .pagination-container {
+    background: transparent;
+    width: max-content !important;
+    margin: 0 auto !important;
+    top: 101% !important;
+    bottom: unset !important;
+    left: 50% !important;
+    transform: translateX(-55%) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 15px 0 10px 0 !important;
+    pointer-events: auto !important;
+}
+
+.hero .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+}
+
+@media (min-width:451px) {
+    .hero .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+    }
+}
+
+.hero .swiper-pagination-bullet-active {
+    background: transparent !important;
+    border: 2px solid rgba(0, 0, 255, 0.838) !important;
+    padding: 3px !important;
+
+}
+
+@media (min-width:451px) {
+    .hero .swiper-pagination-bullet-active {
+        padding: 4px !important;
+    }
+}
+
+.hero .swiper {
+    pointer-events: none !important;
+}
+
+.hero .swiper-slide {
+    pointer-events: auto !important;
+}
+
+.hero .coursecard {
+    pointer-events: auto !important;
+    cursor: pointer;
+}

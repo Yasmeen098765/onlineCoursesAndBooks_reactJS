@@ -1,0 +1,12 @@
+.shope .shope-heading {
+    background: url('../../assets/OnlineCourses/bg-g1.webp') top no-repeat;
+    background-size: 100% 85vh;
+}
+
+@media (min-width=350px) {
+    .shope .shope-heading {
+        background-size: 100% 100vh;
+    }
+}
+
+
