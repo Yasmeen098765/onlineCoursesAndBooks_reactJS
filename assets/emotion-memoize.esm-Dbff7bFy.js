@@ -1,1 +1,0 @@
-import{v as e}from"./index-BrNujwly.js";function t(e){var t=Object.create(null);return function(n){return t[n]===void 0&&(t[n]=e(n)),t[n]}}var n=e((()=>{}));export{t as n,n as t};
