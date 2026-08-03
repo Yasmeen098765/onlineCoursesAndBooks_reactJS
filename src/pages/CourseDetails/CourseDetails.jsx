@@ -147,7 +147,7 @@ function CourseDetails() {
         coursesDetailsSingle && (
           <div className="courseDetails-heading  ">
             <div className="mx-auto py-10 min-[400px]:py-14 px-3 min-[220px]:px-5 min-[350px]:px-8  min-[500px]:px-10 min-[800px]:py-16 min-[800px]:px-16 min-[900px]:px-10 min-[1200px]:p-16">
-              <div className="grid grid-cols-5 min-[1200px]:grid-cols-3 gap-10  relative border-b border-gray-300 pb-8 min-[500px]:pb-14">
+              <div className="grid grid-cols-5 min-[1200px]:grid-cols-3 gap-10 relative  border-b border-gray-300 pb-8 min-[500px]:pb-14">
                 <div className="col-span-5 min-[1000px]:col-span-3  min-[1200px]:col-span-2 ">
                   <div className="w-[100%] min-[770px]:w-[85%]  min-[1000px]:w-[95%] min-[1200px]:w-[88%] me-auto">
                     {/* Breadcrumb */}
@@ -246,12 +246,12 @@ function CourseDetails() {
                       </p>
                     </div>
                   </div>
-                  <div className=" " ref={container}>
+                  <div className="" ref={container}>
                     <div className="sticky z-[3] overflow-hidden top-[100px] my-8 rounded-lg min-[488px]:rounded-full bg-white p-2 min-[400px]:p-3 border border-gray-200 shadow-lg shadow-gray-300">
                       <div className="flex flex-wrap justify-center items-center gap-1 min-[350px]:gap-1 min-[526px]:gap-2  ">
                         <a
                           href="#overview"
-                          className={`activeCourseDetails ${activeSec == "overview" ? "active" : ""} flex-0 min-[526px]:flex-1  min-[1000px]:flex-1 text-center bg-neutral-100 cursor-pointer px-1.5 min-[350px]:px-3 py-1 min-[350px]:py-2 text-[10px] min-[300px]:text-[11px] min-[578px]:text-sm min-[690px]:text-lg min-[1000px]:text-sm min-[1200px]:text-lg rounded-full hover:bg-blue-600 hover:text-white transition duration-300 `}
+                          className={`activeCourseDetails  ${activeSec == "overview" ? "active" : ""} flex-0 min-[526px]:flex-1  min-[1000px]:flex-1 text-center bg-neutral-100 cursor-pointer px-1.5 min-[350px]:px-3 py-1 min-[350px]:py-2 text-[10px] min-[300px]:text-[11px] min-[578px]:text-sm min-[690px]:text-lg min-[1000px]:text-sm min-[1200px]:text-lg rounded-full hover:bg-blue-600 hover:text-white transition duration-300 `}
                         >
                           OverView
                         </a>
@@ -678,7 +678,7 @@ function CourseDetails() {
                   </div>
                 </div>
 
-                <div className="col-span-5 min-[1000px]:col-span-2 min-[1200px]:col-span-1 overflow-visible mb-10 min-[1000px]:mb-0">
+                <div className=" col-span-5 min-[1000px]:col-span-2 min-[1200px]:col-span-1 overflow-visible  mb-10 min-[1000px]:mb-0  ">
                   <CartCourseDetails
                     price={coursesDetailsSingle?.price}
                     discount={coursesDetailsSingle?.discount}
